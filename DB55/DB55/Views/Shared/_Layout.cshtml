@@ -1,4 +1,5 @@
-﻿<!--
+﻿@using Microsoft.AspNet.Identity
+<!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -22,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="/web/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /><!-- //pop-ups-->
     <!-- team-->
     <link href="/web/css/ihover.css" rel="stylesheet" type="text/css" media="all" /><!-- //team -->
-    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="/web/css/swipebox.css">
     <link href="/web/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- fonts -->
     <link href="//fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
@@ -49,19 +50,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li>
                                     @Html.ActionLink("Contact", "Contact", "Home")
                                 </li>
-                                <li>
-                                    @Html.ActionLink("Contact", "Contact", "Home")
-                                </li>
-                                <li>
-                                    @Html.ActionLink("Contact", "Contact", "Home")
-                                </li>
-                                <li>
-                                    @Html.ActionLink("لاگ ان ", "Login", "Account")
-                                </li>
-                                <li>
-                                    @Html.ActionLink("رجسٹر", "Register", "Account")
-                                </li>
+
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+
+                                        <li>
+                                            @Html.ActionLink(User.Identity.GetUserName() + "!" + "ہیلو ", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                                        </li>
+                                        <li><a href="javascript:document.getElementById('logoutForm').submit()">لاگ آف</a></li>
+
+                                    }
+                                }
+                                else
+                                {
+                                    <li>@Html.ActionLink("لاگ ان", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                                    <li>@Html.ActionLink("رجسٹر", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                                }
+
                             </ul>
+
+
 
                         </nav>
                         <div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms"><span></span></div>

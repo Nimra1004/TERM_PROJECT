@@ -1,218 +1,120 @@
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\DB55.dll.config
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\DB55.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\DB55.pdb
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\csc.exe
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\csc.exe.config
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\csc.rsp
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\csi.exe
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\csi.exe.config
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\csi.rsp
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.AppContext.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Console.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.IO.Compression.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.IO.Pipes.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.Claims.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.ValueTuple.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Xml.XPath.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\vbc.exe
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\vbc.exe.config
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\vbc.rsp
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\VBCSCompiler.exe
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Antlr3.Runtime.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\EntityFramework.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\EntityFramework.SqlServer.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Newtonsoft.Json.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Owin.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Helpers.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Mvc.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Optimization.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Razor.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.WebPages.Deployment.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.WebPages.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.WebPages.Razor.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\WebGrease.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Helpers.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Mvc.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Optimization.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.Razor.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.WebPages.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.WebPages.Deployment.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Web.WebPages.Razor.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Newtonsoft.Json.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Antlr3.Runtime.pdb
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\EntityFramework.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\EntityFramework.SqlServer.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\DR AQSA\source\repos\DB55\DB55\obj\Debug\DB55.csprojAssemblyReference.cache
-C:\Users\DR AQSA\source\repos\DB55\DB55\obj\Debug\DB55.csproj.CoreCompileInputs.cache
-C:\Users\DR AQSA\source\repos\DB55\DB55\obj\Debug\DB55.csproj.CopyComplete
-C:\Users\DR AQSA\source\repos\DB55\DB55\obj\Debug\DB55.dll
-C:\Users\DR AQSA\source\repos\DB55\DB55\obj\Debug\DB55.pdb
-E:\dbpro_067_068_069\DB55\DB55\bin\DB55.dll.config
-E:\dbpro_067_068_069\DB55\DB55\bin\DB55.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\DB55.pdb
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\csc.exe
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\csc.exe.config
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\csc.rsp
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\csi.exe
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\csi.exe.config
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\csi.rsp
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.Managed.Core.targets
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.AppContext.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Collections.Immutable.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Console.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Diagnostics.StackTrace.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.IO.Compression.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.IO.FileSystem.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.IO.Pipes.AccessControl.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.IO.Pipes.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Reflection.Metadata.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.AccessControl.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.Claims.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.Cryptography.Encoding.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.Cryptography.Primitives.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Security.Principal.Windows.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Text.Encoding.CodePages.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.ValueTuple.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Xml.ReaderWriter.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Xml.XmlDocument.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Xml.XPath.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\System.Xml.XPath.XDocument.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\vbc.exe
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\vbc.exe.config
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\vbc.rsp
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\VBCSCompiler.exe
-E:\dbpro_067_068_069\DB55\DB55\bin\roslyn\VBCSCompiler.exe.config
-E:\dbpro_067_068_069\DB55\DB55\bin\Antlr3.Runtime.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\EntityFramework.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\EntityFramework.SqlServer.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.Identity.Core.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Host.SystemWeb.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Cookies.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Facebook.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Google.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.OAuth.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Twitter.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Web.Infrastructure.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Newtonsoft.Json.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\Owin.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Diagnostics.DiagnosticSource.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Helpers.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Mvc.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Optimization.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Razor.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.WebPages.Deployment.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.WebPages.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.WebPages.Razor.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\WebGrease.dll
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Helpers.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Mvc.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Optimization.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.Razor.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.WebPages.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.WebPages.Deployment.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Web.WebPages.Razor.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Newtonsoft.Json.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Antlr3.Runtime.pdb
-E:\dbpro_067_068_069\DB55\DB55\bin\EntityFramework.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\EntityFramework.SqlServer.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.Identity.Core.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Host.SystemWeb.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Facebook.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Cookies.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Google.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.Twitter.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.Owin.Security.OAuth.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\System.Diagnostics.DiagnosticSource.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-E:\dbpro_067_068_069\DB55\DB55\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\dbpro_067_068_069\DB55\DB55\obj\Debug\DB55.csprojAssemblyReference.cache
-E:\dbpro_067_068_069\DB55\DB55\obj\Debug\DB55.csproj.CoreCompileInputs.cache
-E:\dbpro_067_068_069\DB55\DB55\obj\Debug\DB55.csproj.CopyComplete
-E:\dbpro_067_068_069\DB55\DB55\obj\Debug\DB55.dll
-E:\dbpro_067_068_069\DB55\DB55\obj\Debug\DB55.pdb
+C:\Users\HP\source\repos\DB55\DB55\obj\Debug\DB55.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\DB55\DB55\bin\ApplicationInsights.config
+C:\Users\HP\source\repos\DB55\DB55\bin\DB55.dll.config
+C:\Users\HP\source\repos\DB55\DB55\bin\DB55.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\DB55.pdb
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\csc.exe
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\csc.exe.config
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\csc.rsp
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\csi.exe
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\csi.exe.config
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\csi.rsp
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.AppContext.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Console.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.IO.Compression.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.IO.Pipes.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.Claims.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\vbc.exe
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\vbc.exe.config
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\vbc.rsp
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\source\repos\DB55\DB55\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\source\repos\DB55\DB55\bin\Antlr3.Runtime.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\EntityFramework.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.Web.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.ApplicationInsights.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Newtonsoft.Json.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\Owin.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Helpers.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Mvc.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Optimization.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Razor.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.WebPages.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\WebGrease.dll
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Helpers.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Mvc.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Optimization.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.Razor.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.WebPages.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Newtonsoft.Json.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Antlr3.Runtime.pdb
+C:\Users\HP\source\repos\DB55\DB55\bin\EntityFramework.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.AI.Web.xml
+C:\Users\HP\source\repos\DB55\DB55\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\source\repos\DB55\DB55\obj\Debug\DB55.csproj.CopyComplete
+C:\Users\HP\source\repos\DB55\DB55\obj\Debug\DB55.dll
+C:\Users\HP\source\repos\DB55\DB55\obj\Debug\DB55.pdb
+C:\Users\HP\source\repos\DB55\DB55\obj\Debug\DB55.csprojAssemblyReference.cache

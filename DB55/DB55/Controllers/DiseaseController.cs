@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DB55.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,22 @@ namespace DB55.Controllers
 {
     public class DiseaseController : Controller
     {
+        DB55Entities db = new DB55Entities();
         // GET: Disease
         public ActionResult Index()
         {
-            return View();
+            List<Disease> list1 = db.Diseases.ToList();
+            List<DiseaseViewModel> viewList = new List<DiseaseViewModel>();
+            foreach (Disease s in list1)
+            {
+                DiseaseViewModel obj = new DiseaseViewModel();
+                obj.Id = s.Id;
+                obj.Name = s.Name;
+                //obj.DoctorId = 
+                viewList.Add(obj);
+
+            }
+            return View(viewList);
         }
 
         // GET: Disease/Details/5
