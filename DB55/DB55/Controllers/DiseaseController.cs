@@ -15,18 +15,21 @@ namespace DB55.Controllers
         public ActionResult Index()
         {
             DB55Entities db = new DB55Entities();
-            List<DiseasesModel> viewlist = new List<DiseasesModel>();
-            DiseasesModel obj = new DiseasesModel();
             List<Disease> list1 = db.Diseases.ToList();
-            for (int i = 0; i < list1.Count; i++)
+            List<DiseasesModel> viewList = new List<DiseasesModel>();
+
+            foreach (Disease s in list1)
             {
-                Disease d = list1.ElementAt(i);
-                obj.Name = d.Name;
-                obj.CategoryId = d.CategoryId;
-                obj.PredictionID = d.PredictionID;
-                viewlist.Add(obj);
+                DiseasesModel obj = new DiseasesModel();
+                obj.Id = s.Id;
+                obj.Name = s.Name;
+                obj.DoctorId = s.DoctorId;
+                obj.CategoryId = s.CategoryId;
+                obj.PredictionID = s.PredictionID;
+                viewList.Add(obj);
+
             }
-            return View(viewlist);
+            return View(viewList);
 
         }
         [HttpGet]

@@ -17,9 +17,6 @@ namespace DB55.ViewModel
         public int Discriminator { get; set; }
         public string UserId { get; set; }
 
-        public virtual AspNetUser AspNetUser { get; set; }
-        public virtual DoctorModel Doctor { get; set; }
-        public virtual Lookup Lookup { get; set; }
-        public virtual Lookup Lookup1 { get; set; }
+        
     }
 }

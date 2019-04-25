@@ -16,14 +16,6 @@ namespace DB55.ViewModel
         public int PredictionID { get; set; }
         public int CategoryId { get; set; }
 
-        public virtual Category Category { get; set; }
-        public virtual Doctor Doctor { get; set; }
-        public virtual Lookup Lookup { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DiseasePrediction> DiseasePredictions { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Medicine> Medicines { get; set; }
-
         public static IEnumerable<SelectListItem> GetPredictionId()
         {
             IList<SelectListItem> items = new List<SelectListItem>
