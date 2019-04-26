@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using DB55.ViewModel;
 using DB55.Models;
 using System.Data.Entity.Validation;
+using Microsoft.AspNet.Identity;
 
 namespace DB55.Controllers
 {
@@ -24,6 +25,7 @@ namespace DB55.Controllers
                 obj.Name = d.Name;
                 obj.CategoryId = d.CategoryId;
                 obj.PredictionID = d.PredictionID;
+                obj.Id = d.Id;
                 viewlist.Add(obj);
             }
             return View(viewlist);
@@ -37,22 +39,66 @@ namespace DB55.Controllers
         [HttpPost]
         public ActionResult AddDisease(DiseasesModel model)
         {
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
             if (ModelState.IsValid)
             {
                 try
                 {
+                    
                     DB55Entities db = new DB55Entities();
+                    int docID = 0;
+                    int CatId = 0;
+                    int predId = 0;
+                    //---------------------------------------------------------------------
+                    List<PersonModel> viewlist = new List<PersonModel>();
+                    PersonModel obj = new PersonModel();
+                    List<Person> list1 = db.People.ToList();
+                    string Login = User.Identity.GetUserId();
+                    for ( int i = 0; i < list1.Count(); i++)
+                    {
+                        Person req = list1.ElementAt(i);
+                        if ( req.UserId == Login)
+                        {
+                            docID = req.Id;
+                        }
+                    }
+                    //---------------------------------------------------------------------
+                    List<CategoryViewModel> viewlist2 = new List<CategoryViewModel>();
+                    CategoryViewModel obj2 = new CategoryViewModel();
+                    List<Category> list2 = db.Categories.ToList();
+                    int Cat = model.CategoryId;
+                    for (int i = 0; i < list2.Count(); i++)
+                    {
+                        Category req = list2.ElementAt(i);
+                        if (req.Id == Cat) // change with name
+                        {
+                            CatId = req.Id;
+                        }
+                    }
+                    //----------------------------------------------------------------------
+                    
+                    List<CategoryViewModel> viewlist3 = new List<CategoryViewModel>();
+                    CategoryViewModel obj3 = new CategoryViewModel();
+                    List<Lookup> list3 = db.Lookups.ToList();
+                    int pred = model.PredictionID;
+                    for (int i = 0; i < list3.Count(); i++)
+                    {
+                        Lookup req = list3.ElementAt(i);
+                        if (req.Id == pred) 
+                        {
+                            predId = req.Id;
+                        }
+                    }
+                    //-------------------------------------------------                    
                     Disease d1 = new Disease();
                     d1.Name = model.Name;
-                    d1.PredictionID = model.PredictionID;
-                    d1.DoctorId = 1;
-                    d1.CategoryId = 1;
+                    d1.PredictionID = predId;
+                    d1.DoctorId = docID;
+                    d1.CategoryId = CatId;
                     db.Diseases.Add(d1);
                     db.SaveChanges();
 
-                    db.SaveChanges();
-
-                    return RedirectToAction("Index", "Disease");
+                    return RedirectToAction("Index", "Home");
                 }
                 catch (DbEntityValidationException dbEx)
                 {
@@ -139,16 +185,33 @@ namespace DB55.Controllers
                 return View();
             }
         }
-        public ActionResult AddReason(ReasonModel model)
+        [HttpPost]
+        public ActionResult AddReason(int id, ReasonModel model)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
                     DB55Entities db = new DB55Entities();
+                    int docID = 0;
+                    //---------------------------------------------------------------------
+                    List<PersonModel> viewlist = new List<PersonModel>();
+                    PersonModel obj = new PersonModel();
+                    List<Person> list1 = db.People.ToList();
+                    string Login = User.Identity.GetUserId();
+                    for (int i = 0; i < list1.Count(); i++)
+                    {
+                        Person req = list1.ElementAt(i);
+                        if (req.UserId == Login)
+                        {
+                            docID = req.Id;
+                        }
+                    }
+                    //---------------------------------------------------------------------
                     Reason r1 = new Reason();
                     r1.Name = model.Name;
-                    r1.DoctorId = 1;
+                    r1.DoctorId = docID;
+                    r1.DiseaseId = id;
                     db.Reasons.Add(r1);
                     db.SaveChanges();
 
@@ -178,9 +241,24 @@ namespace DB55.Controllers
                 try
                 {
                     DB55Entities db = new DB55Entities();
+                    int docID = 0;
+                    //---------------------------------------------------------------------
+                    List<PersonModel> viewlist = new List<PersonModel>();
+                    PersonModel obj = new PersonModel();
+                    List<Person> list1 = db.People.ToList();
+                    string Login = User.Identity.GetUserId();
+                    for (int i = 0; i < list1.Count(); i++)
+                    {
+                        Person req = list1.ElementAt(i);
+                        if (req.UserId == Login)
+                        {
+                            docID = req.Id;
+                        }
+                    }
+                    //---------------------------------------------------------------------
                     Symptom s1 = new Symptom();
                     s1.Name = model.Name;
-                    s1.DoctorId = 1;
+                    s1.DoctorId = docID;
                     db.Symptoms.Add(s1);
                     db.SaveChanges();
 
@@ -210,9 +288,24 @@ namespace DB55.Controllers
                 try
                 {
                     DB55Entities db = new DB55Entities();
+                    int docID = 0;
+                    //---------------------------------------------------------------------
+                    List<PersonModel> viewlist = new List<PersonModel>();
+                    PersonModel obj = new PersonModel();
+                    List<Person> list1 = db.People.ToList();
+                    string Login = User.Identity.GetUserId();
+                    for (int i = 0; i < list1.Count(); i++)
+                    {
+                        Person req = list1.ElementAt(i);
+                        if (req.UserId == Login)
+                        {
+                            docID = req.Id;
+                        }
+                    }
+                    //---------------------------------------------------------------------
                     Medicine m1 = new Medicine();
                     m1.Name = model.Name;
-                    m1.DoctorId = 1;
+                    m1.DoctorId = docID;
                     db.Medicines.Add(m1);
                     db.SaveChanges();
 
@@ -233,6 +326,12 @@ namespace DB55.Controllers
             }
             return View();
 
+        }
+        [HttpGet]
+        public ActionResult AddItems()
+        {
+
+            return View();
         }
     }
 }

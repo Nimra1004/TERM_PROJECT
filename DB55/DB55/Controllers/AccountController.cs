@@ -13,6 +13,7 @@ using DB55.Models;
 namespace DB55.Controllers
 {
     [Authorize]
+
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
@@ -22,7 +23,7 @@ namespace DB55.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -34,9 +35,9 @@ namespace DB55.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -51,7 +52,10 @@ namespace DB55.Controllers
                 _userManager = value;
             }
         }
-
+        public ActionResult Roles()
+        {
+            return View();
+        }
         //
         // GET: /Account/Login
         [AllowAnonymous]
@@ -120,7 +124,7 @@ namespace DB55.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -133,6 +137,78 @@ namespace DB55.Controllers
                     return View(model);
             }
         }
+
+
+
+        //
+        // GET: /Account/Register
+        [AllowAnonymous]
+        public ActionResult DoctorRegister()
+        {
+            return View();
+        }
+
+        //
+        // POST: /Account/Register
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> DoctorRegister(DoctorRegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new ApplicationUser { UserName = model.Email1, Email = model.Email1 };
+                var result = await UserManager.CreateAsync(user, model.Password1);
+                if (result.Succeeded)
+                {
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                    DB55Entities db = new DB55Entities();
+                    var userdbmodel = db.AspNetUsers.Where(a => a.Email.Equals(model.Email1)).FirstOrDefault();
+                    Person registeruser = new Person();
+                    Doctor doc = new Doctor();
+                    registeruser.FirstName = model.FirstName1;
+                    registeruser.LastName = model.LastName1;
+                    registeruser.Email = model.Email1;
+                    registeruser.Country = model.Country1;
+                    registeruser.Contact = model.Contact1;
+                    registeruser.UserId = userdbmodel.Id;
+                    if (model.Gender1 == "عورت")
+                    {
+                        registeruser.Gender = 1;
+                    }
+                    else
+                    {
+                        registeruser.Gender = 2;
+                    }
+                    registeruser.Discriminator = 5;
+                    string login = User.Identity.GetUserId();
+                    if (registeruser.UserId == User.Identity.GetUserId())
+                    {
+                        doc.Id = registeruser.Id;
+                    }
+                    doc.LicenseNumber = model.LiscenceNumber;
+                    db.People.Add(registeruser);
+                    db.Doctors.Add(doc);
+                    //viewList.Add(donor);
+                    // db.RegisteredUsers.Add(donor);
+                    db.SaveChanges();
+                    // return View(viewList);
+                    // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
+                    // Send an email with this link
+                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+
+                    return RedirectToAction("Index", "Home");
+                }
+                AddErrors(result);
+            }
+
+            // If we got this far, something failed, redisplay form
+            return View(model);
+        }
+
+
 
         //
         // GET: /Account/Register
@@ -155,7 +231,7 @@ namespace DB55.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                     DB55Entities db = new DB55Entities();
                     var userdbmodel = db.AspNetUsers.Where(a => a.Email.Equals(model.Email)).FirstOrDefault();
                     Person registeruser = new Person();
@@ -166,7 +242,15 @@ namespace DB55.Controllers
                     registeruser.Contact = model.Contact;
                     registeruser.UserId = userdbmodel.Id;
                     registeruser.Gender = 1;
-                    registeruser.Discriminator = 2;
+                    if (model.Gender == "عورت")
+                    {
+                        registeruser.Gender = 1;
+                    }
+                    else
+                    {
+                        registeruser.Gender = 2;
+                    }
+                    registeruser.Discriminator = 3;
                     db.People.Add(registeruser);
                     //viewList.Add(donor);
                     // db.RegisteredUsers.Add(donor);
