@@ -241,7 +241,6 @@ namespace DB55.Controllers
                     registeruser.Country = model.Country;
                     registeruser.Contact = model.Contact;
                     registeruser.UserId = userdbmodel.Id;
-                    registeruser.Gender = 1;
                     if (model.Gender == "عورت")
                     {
                         registeruser.Gender = 1;

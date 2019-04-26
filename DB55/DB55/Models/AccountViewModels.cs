@@ -78,13 +78,15 @@ namespace DB55.Models
         public string Country { get; set; }
 
         [Required]
+        [Display(Name = "Gender")]
+        public string Gender { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        //[Required]
-        [Display(Name = "Gender")]
-        public string Gender { get; set; }
+
 
         [Display(Name = "Discriminator")]
         public string Discriminator { get; set; }
@@ -107,6 +109,7 @@ namespace DB55.Models
         {
             IList<SelectListItem> items = new List<SelectListItem>
             {
+                new  SelectListItem{Text = "ملک", Value = "ملک" },
                 new  SelectListItem{Text = "Afghanistan", Value = "Afghanistan" },
                 new  SelectListItem{Text = "Åland Islands", Value = "Åland Islands" },
                 new  SelectListItem{Text = "Albania", Value = "Albania" },
@@ -118,34 +121,118 @@ namespace DB55.Models
             };
             return items;
         }
-    }
-
-        public class ResetPasswordViewModel
+        public static IEnumerable<SelectListItem> GenderList()
         {
-            [Required]
-            [EmailAddress]
-            [Display(Name = "Email")]
-            public string Email { get; set; }
-
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
-            [DataType(DataType.Password)]
-            [Display(Name = "Password")]
-            public string Password { get; set; }
-
-            [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-            public string ConfirmPassword { get; set; }
-
-            public string Code { get; set; }
+            IList<SelectListItem> items = new List<SelectListItem>
+            {
+                new  SelectListItem{Text = "صنف", Value = "صنف" },
+                new  SelectListItem{Text = "مرد", Value = "مرد" },
+                new  SelectListItem{Text = "عورت", Value = "عورت" },
+            };
+            return items;
         }
 
-        public class ForgotPasswordViewModel
-        {
-            [Required]
-            [EmailAddress]
-            [Display(Name = "Email")]
-            public string Email { get; set; }
-        }
     }
+
+    public class ResetPasswordViewModel
+    {
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword { get; set; }
+
+        public string Code { get; set; }
+    }
+    public class ForgotPasswordViewModel
+    {
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+    }
+    public class DoctorRegisterViewModel
+    {
+        [Required]
+        [Display(Name = "FirstName")]
+        public string FirstName1 { get; set; }
+
+        [Required]
+        [Display(Name = "lastName")]
+        public string LastName1 { get; set; }
+
+        [Required]
+        [Display(Name = "Country")]
+        public string Country1 { get; set; }
+
+        [Required]
+        [Display(Name = "Gender")]
+        public string Gender1 { get; set; }
+
+        [Required]
+        [Display(Name = "LiscenceNumber")]
+        public int LiscenceNumber { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email1 { get; set; }
+
+
+
+        [Display(Name = "Discriminator")]
+        public string Discriminator1 { get; set; }
+
+        [Required]
+        [Display(Name = "Contact")]
+        public string Contact1 { get; set; }
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password1 { get; set; }
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [System.ComponentModel.DataAnnotations.Compare("Password1", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword1 { get; set; }
+
+        public static IEnumerable<SelectListItem> CountryList1()
+        {
+            IList<SelectListItem> items = new List<SelectListItem>
+            {
+                new  SelectListItem{Text = "ملک", Value = "ملک" },
+                new  SelectListItem{Text = "Afghanistan", Value = "Afghanistan" },
+                new  SelectListItem{Text = "Åland Islands", Value = "Åland Islands" },
+                new  SelectListItem{Text = "Albania", Value = "Albania" },
+                new  SelectListItem{Text = "Algeria", Value = "Algeria" },
+                new  SelectListItem{Text = "American Samoa", Value = "American Samoa" },
+                new  SelectListItem{Text = "Andorra", Value = "Andorra" },
+                new  SelectListItem{Text = "Angola", Value = "Angola" },
+                new  SelectListItem{Text = "Anguilla", Value = "Anguilla" },
+            };
+            return items;
+        }
+        public static IEnumerable<SelectListItem> GenderList1()
+        {
+            IList<SelectListItem> items = new List<SelectListItem>
+            {
+                new  SelectListItem{Text = "صنف", Value = "صنف" },
+                new  SelectListItem{Text = "مرد", Value = "مرد" },
+                new  SelectListItem{Text = "عورت", Value = "عورت" },
+            };
+            return items;
+        }
+
+    }
+}

@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="keywords" content="holidaymaker Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript">
@@ -28,74 +29,95 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- fonts -->
     <link href="//fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <style>
+        .c2 a {
+            color: red;
+        }
+    </style>
     <!-- //fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Organization Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link href="~/web/css1/style1.css" rel="stylesheet" />
+    <link href="~/web/css1/font-awesome1.css" rel="stylesheet" />
+    <link href="~/web/css1/bootstrap1.css" rel="stylesheet" />
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <!-- //Fonts -->
+
+
+
 </head>
 <body>
-    <!-- banner -->
-    <div class="banner-figures">
-        <div class="banner">
-            <div class="container banner-drop">
-                <div class="header">
-                    <div class="header-left logo">
-                    </div>
-                    <div class="header-right">
-                        <nav>
-                            <ul>
-                                <li class="active">
-                                    @Html.ActionLink("ہوم", "Index", "Home")
-                                </li>
-                                <li>
-                                    @Html.ActionLink("انٹر کریں", "AddItems", "Disease")
-                                </li>
-                                <li>
-                                    @Html.ActionLink("Contact", "Contact", "Home")
-                                </li>
 
-                                @if (Request.IsAuthenticated)
-                                {
-                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-                                    {
-                                        @Html.AntiForgeryToken()
-
-                                        <li>
-                                            @Html.ActionLink(User.Identity.GetUserName() + "!" + "ہیلو ", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-                                        </li>
-                                        <li><a href="javascript:document.getElementById('logoutForm').submit()">لاگ آف</a></li>
-
-                                    }
-                                }
-                                else
-                                {
-                                    <li>@Html.ActionLink("لاگ ان", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-                                    <li>@Html.ActionLink("رجسٹر", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                                }
-
-                            </ul>
+    <div class="header">
 
 
+        <!-- nav -->
+        <nav class="pt-4 d-lg-flex">
+            <label for="drop" class="toggle">مینو</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-2 ml-auto">
 
-                        </nav>
-                        <div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms"><span></span></div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="banner-text-agileits">
-                    <h3>میڈیکل انسایکلو پیڈیا</h3>
-                    <p>ہر قسم کی بیماری کے بارے میں جانیے</p>
-                </div>
+                @if (Request.IsAuthenticated)
+                {
+                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    {
+                        @Html.AntiForgeryToken()
 
-                <div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
-                    <ul class="top-links">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li>
+                            @Html.ActionLink(User.Identity.GetUserName() + "!" + "ہیلو ", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                        </li>
+                        <li><a href="javascript:document.getElementById('logoutForm').submit()">لاگ آف</a></li>
+
+                    }
+                }
+                else
+                {
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle">رجسٹر <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                        <a href="#">رجسٹر<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        <input type="checkbox" id="drop-2" />
+                        <ul class="inner-ul">
+
+                            <li>
+                                @Html.ActionLink("صارف", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @style = "color:#fff;" })
+                        </li>
+                        <li>@Html.ActionLink("ڈاکٹر", "DoctorRegister", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @style = "color:#fff;" })</li>
+                        <li>@Html.ActionLink("ایڈمن", "Login", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @style = "color:#fff;" })</li>
+
                     </ul>
-                </div>
-            </div>
-        </div>
+                </li>
+                <li>
+                    @Html.ActionLink("لاگ ان ", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+                </li>
+
+            }
+
+                <li><a href="@Url.Action("Index","Home")">بیماری</a></li>
+                <li><a href="@Url.Action("Index","Home")">ایڈ کریں</a></li>
+                <li><a href="@Url.Action("Index","Home")">تلاش کریں</a></li>
+                <li class="active"><a href="@Url.Action("Index","Home")">ہوم</a></li>
+
+            </ul>
+        </nav>
     </div>
-    <!-- //banner -->
+
+
     @RenderBody()
 
     <div class="footer">
@@ -195,3 +217,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </body>
 </html>
+<!--
+        <li class="nav-item dropdown">
+        <a class="navbar-link dropdown-toggle" href="index.html" id="dropdown04" aria-haspopup="true" aria-expanded="false" >Register</a>
+        <a href="@Url.Action("Register","Register")" class="dropdown-item"><span>User</span></a>-->

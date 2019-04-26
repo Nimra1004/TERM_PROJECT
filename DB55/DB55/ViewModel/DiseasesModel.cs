@@ -15,7 +15,6 @@ namespace DB55.ViewModel
         public int PredictionID { get; set; }
         public int CategoryId { get; set; }
 
-       
         public static IEnumerable<SelectListItem> GetPredictionId()
         {
             IList<SelectListItem> items = new List<SelectListItem>

@@ -16,6 +16,7 @@ namespace DB55.ViewModel
         public int Gender { get; set; }
         public int Discriminator { get; set; }
         public string UserId { get; set; }
+
         
     }
 }
