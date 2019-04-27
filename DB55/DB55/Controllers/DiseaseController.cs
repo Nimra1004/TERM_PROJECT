@@ -18,15 +18,15 @@ namespace DB55.Controllers
             DB55Entities db = new DB55Entities();
             List<Disease> list1 = db.Diseases.ToList();
             List<DiseasesModel> viewList = new List<DiseasesModel>();
-
-            foreach (Disease s in list1)
+            DiseasesModel obj = new DiseasesModel();
+            for(int i = 0; i < list1.Count(); i++)
             {
                 Disease d = list1.ElementAt(i);
                 obj.Name = d.Name;
                 obj.CategoryId = d.CategoryId;
                 obj.PredictionID = d.PredictionID;
                 obj.Id = d.Id;
-                viewlist.Add(obj);
+                viewList.Add(obj);
             }
             return View(viewList);
 
