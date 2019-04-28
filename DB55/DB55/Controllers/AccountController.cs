@@ -76,27 +76,14 @@ namespace DB55.Controllers
             {
                 return View(model);
             }
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            if ((model.Email == "AdminUser@gmail.com") && (model.Password == "Admin@789"))
+            {
+                RedirectToLocal(returnUrl);
+                return RedirectToAction("About", "Home");
+            }
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            if (model.Email == "Admin@gmail.com" && model.Password == "Admin@1")
-            {
-                
-                switch (result)
-                {
-                    case SignInStatus.Success:
-                        return RedirectToAction("View");
-                    case SignInStatus.LockedOut:
-                        return View("Lockout");
-                    case SignInStatus.RequiresVerification:
-                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                    case SignInStatus.Failure:
-                    default:
-                        ModelState.AddModelError("", "Invalid login attempt.");
-                        return View(model);
-                }
-            }
-            
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -154,21 +141,14 @@ namespace DB55.Controllers
                     return View(model);
             }
         }
-
-
-        [AllowAnonymous]
-        public ActionResult View()
-        {
-            return View("View");
-        }
-
+        
 
         //
         // GET: /Account/Register
         [AllowAnonymous]
         public ActionResult DoctorRegister()
         {
-            return View();
+            return View("DoctorRegister");
         }
 
         //
@@ -238,7 +218,7 @@ namespace DB55.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            return View();
+            return View("Register");
         }
 
         //
