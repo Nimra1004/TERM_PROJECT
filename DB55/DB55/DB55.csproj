@@ -275,14 +275,10 @@
       <DependentUpon>DB55.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AddModel.cs" />
-    <Compile Include="ViewModel\DiseasesModel.cs" />
     <Compile Include="ViewModel\DoctorModel.cs" />
     <Compile Include="ViewModel\LookupModel.cs" />
-    <Compile Include="ViewModel\MedicineModel.cs" />
     <Compile Include="ViewModel\PersonModel.cs" />
-    <Compile Include="ViewModel\ReasonModel.cs" />
     <Compile Include="ViewModel\ShowDisease.cs" />
-    <Compile Include="ViewModel\SymptomsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\404.html" />
