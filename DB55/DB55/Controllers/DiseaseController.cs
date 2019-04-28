@@ -319,6 +319,11 @@ namespace DB55.Controllers
 
         }
         [HttpGet]
+        public ActionResult AddTreatment()
+        {
+            return View("AddTreatment");
+        }
+        [HttpPost]
         public ActionResult AddTreatment(Prediction model)
         {
             if (ModelState.IsValid)

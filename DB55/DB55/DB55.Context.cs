@@ -40,6 +40,5 @@ namespace DB55
         public virtual DbSet<Reason> Reasons { get; set; }
         public virtual DbSet<Search> Searches { get; set; }
         public virtual DbSet<Symptom> Symptoms { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

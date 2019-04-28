@@ -15,13 +15,13 @@ namespace DB55.ViewModel
         public int PredictionID { get; set; }
         public int CategoryId { get; set; }
         
-        private static List<SelectListItem> GetPredictionId()
+        public static List<SelectListItem> GetPredictionId()
         {
             DB55Entities entities = new DB55Entities();
             List<SelectListItem> listDiseases = (from p in entities.Lookups.AsEnumerable()
                                                  select new SelectListItem
                                                  {
-                                                     Text = p.Name,
+                                                     Text = p.Value,
                                                      Value = p.Id.ToString()
                                                  }).ToList();
 
@@ -30,10 +30,10 @@ namespace DB55.ViewModel
             return listDiseases;
         }
 
-        private static List<SelectListItem> GetCategoryId()
+        public static List<SelectListItem> GetCategoryId()
         {
             DB55Entities entities = new DB55Entities();
-            List<SelectListItem> listDiseases = (from p in entities.Caterogies.AsEnumerable()
+            List<SelectListItem> listDiseases = (from p in entities.Categories.AsEnumerable()
                                                  select new SelectListItem
                                                  {
                                                      Text = p.Name,

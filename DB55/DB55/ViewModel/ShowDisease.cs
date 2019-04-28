@@ -13,5 +13,6 @@ namespace DB55.ViewModel
         public string CategoryName { get; set; }
         public string DoctorName { get; set; }
         public string ReasonName { get; set; }
+        public string MedicineName { get; set; }
     }
 }

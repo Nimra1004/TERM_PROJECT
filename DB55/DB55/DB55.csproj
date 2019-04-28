@@ -271,14 +271,16 @@
     <Compile Include="Symptom.cs">
       <DependentUpon>DB55.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>DB55.tt</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel\AddModel.cs" />
+    <Compile Include="ViewModel\DiseasesModel.cs" />
     <Compile Include="ViewModel\DoctorModel.cs" />
     <Compile Include="ViewModel\LookupModel.cs" />
+    <Compile Include="ViewModel\MedicineModel.cs" />
     <Compile Include="ViewModel\PersonModel.cs" />
+    <Compile Include="ViewModel\Prediction.cs" />
+    <Compile Include="ViewModel\ReasonModel.cs" />
     <Compile Include="ViewModel\ShowDisease.cs" />
+    <Compile Include="ViewModel\SymptomsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\404.html" />
@@ -418,15 +420,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="css\animate.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\magnific-popup.css" />
-    <Content Include="css\owl.carousel.min.css" />
-    <Content Include="css\style.css" />
-    <Content Include="images\Hope1.jpg" />
-    <Content Include="images\inject.jpg" />
-    <Content Include="images\sharon-mccutcheon-530237-unsplash.jpg" />
-    <Content Include="images\Skull.jpg" />
     <Content Include="DB55.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DB55.edmx</DependentUpon>
@@ -437,21 +430,57 @@
       <DependentUpon>DB55.edmx</DependentUpon>
       <LastGenOutput>DB55.cs</LastGenOutput>
     </Content>
+    <Content Include="frontPage\about.html" />
+    <Content Include="frontPage\contact.html" />
+    <Content Include="frontPage\css\bootstrap.css" />
+    <Content Include="frontPage\css\chocolat.css" />
+    <Content Include="frontPage\css\flexslider.css" />
+    <Content Include="frontPage\css\fontawesome-all.min.css" />
+    <Content Include="frontPage\css\jquery-ui.css" />
+    <Content Include="frontPage\css\minimal-slider.css" />
+    <Content Include="frontPage\css\style.css" />
+    <Content Include="frontPage\gallery.html" />
+    <Content Include="frontPage\images\bg1.jpg" />
+    <Content Include="frontPage\images\bg2.jpg" />
+    <Content Include="frontPage\images\bg3.jpg" />
+    <Content Include="frontPage\images\bg4.jpg" />
+    <Content Include="frontPage\images\cal.png" />
+    <Content Include="frontPage\images\cal1.png" />
+    <Content Include="frontPage\images\close.png" />
+    <Content Include="frontPage\images\g1.jpg" />
+    <Content Include="frontPage\images\g2.jpg" />
+    <Content Include="frontPage\images\g3.jpg" />
+    <Content Include="frontPage\images\g4.jpg" />
+    <Content Include="frontPage\images\g5.jpg" />
+    <Content Include="frontPage\images\g6.jpg" />
+    <Content Include="frontPage\images\g7.jpg" />
+    <Content Include="frontPage\images\g8.jpg" />
+    <Content Include="frontPage\images\g9.jpg" />
+    <Content Include="frontPage\images\left.png" />
+    <Content Include="frontPage\images\move-top.png" />
+    <Content Include="frontPage\images\right.png" />
+    <Content Include="frontPage\images\t1.jpg" />
+    <Content Include="frontPage\images\t2.jpg" />
+    <Content Include="frontPage\images\t3.jpg" />
+    <Content Include="frontPage\images\te1.jpg" />
+    <Content Include="frontPage\images\te2.jpg" />
+    <Content Include="frontPage\images\te3.jpg" />
+    <Content Include="frontPage\index.html" />
+    <Content Include="frontPage\js\bootstrap.js" />
+    <Content Include="frontPage\js\easing.js" />
+    <Content Include="frontPage\js\jquery-2.2.3.min.js" />
+    <Content Include="frontPage\js\jquery-ui.js" />
+    <Content Include="frontPage\js\jquery.chocolat.js" />
+    <Content Include="frontPage\js\jquery.flexslider.js" />
+    <Content Include="frontPage\js\minimal-slider.js" />
+    <Content Include="frontPage\js\move-top.js" />
+    <Content Include="frontPage\js\SmoothScroll.min.js" />
+    <Content Include="frontPage\services.html" />
+    <Content Include="frontPage\typo.html" />
+    <Content Include="frontPage\w3layouts-License.txt" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\google-map.js" />
-    <Content Include="js\jquery-3.2.1.min.js" />
-    <Content Include="js\jquery-migrate-3.0.0.js" />
-    <Content Include="js\jquery.animateNumber.min.js" />
-    <Content Include="js\jquery.magnific-popup.min.js" />
-    <Content Include="js\jquery.stellar.min.js" />
-    <Content Include="js\jquery.waypoints.min.js" />
-    <Content Include="js\main.js" />
-    <Content Include="js\owl.carousel.min.js" />
-    <Content Include="js\popper.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -551,6 +580,16 @@
     <Content Include="Admin\maps\mideast.json" />
     <Content Include="Admin\maps\risk.json" />
     <Content Include="Admin\maps\usofa.json" />
+    <Content Include="frontPage\webfonts\fa-brands-400.woff" />
+    <Content Include="frontPage\webfonts\fa-brands-400.woff2" />
+    <Content Include="frontPage\webfonts\fa-regular-400.eot" />
+    <Content Include="frontPage\webfonts\fa-regular-400.ttf" />
+    <Content Include="frontPage\webfonts\fa-regular-400.woff" />
+    <Content Include="frontPage\webfonts\fa-regular-400.woff2" />
+    <Content Include="frontPage\webfonts\fa-solid-900.eot" />
+    <Content Include="frontPage\webfonts\fa-solid-900.ttf" />
+    <Content Include="frontPage\webfonts\fa-solid-900.woff" />
+    <Content Include="frontPage\webfonts\fa-solid-900.woff2" />
     <EntityDeploy Include="DB55.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DB55.Designer.cs</LastGenOutput>
@@ -558,7 +597,6 @@
     <Content Include="DB55.edmx.diagram">
       <DependentUpon>DB55.edmx</DependentUpon>
     </Content>
-    <Content Include="css\bootstrap.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -635,101 +673,14 @@
     <Content Include="Views\Disease\AddReason.cshtml" />
     <Content Include="Views\Disease\Index.cshtml" />
     <Content Include="Views\Account\View.cshtml" />
-    <Content Include="scss\.DS_Store" />
-    <Content Include="scss\bootstrap-grid.scss" />
-    <Content Include="scss\bootstrap-reboot.scss" />
-    <Content Include="scss\bootstrap.scss" />
-    <Content Include="scss\mixins\_alert.scss" />
-    <Content Include="scss\mixins\_background-variant.scss" />
-    <Content Include="scss\mixins\_badge.scss" />
-    <Content Include="scss\mixins\_border-radius.scss" />
-    <Content Include="scss\mixins\_box-shadow.scss" />
-    <Content Include="scss\mixins\_breakpoints.scss" />
-    <Content Include="scss\mixins\_buttons.scss" />
-    <Content Include="scss\mixins\_caret.scss" />
-    <Content Include="scss\mixins\_clearfix.scss" />
-    <Content Include="scss\mixins\_float.scss" />
-    <Content Include="scss\mixins\_forms.scss" />
-    <Content Include="scss\mixins\_gradients.scss" />
-    <Content Include="scss\mixins\_grid-framework.scss" />
-    <Content Include="scss\mixins\_grid.scss" />
-    <Content Include="scss\mixins\_hover.scss" />
-    <Content Include="scss\mixins\_image.scss" />
-    <Content Include="scss\mixins\_list-group.scss" />
-    <Content Include="scss\mixins\_lists.scss" />
-    <Content Include="scss\mixins\_nav-divider.scss" />
-    <Content Include="scss\mixins\_navbar-align.scss" />
-    <Content Include="scss\mixins\_pagination.scss" />
-    <Content Include="scss\mixins\_reset-text.scss" />
-    <Content Include="scss\mixins\_resize.scss" />
-    <Content Include="scss\mixins\_screen-reader.scss" />
-    <Content Include="scss\mixins\_size.scss" />
-    <Content Include="scss\mixins\_table-row.scss" />
-    <Content Include="scss\mixins\_text-emphasis.scss" />
-    <Content Include="scss\mixins\_text-hide.scss" />
-    <Content Include="scss\mixins\_text-truncate.scss" />
-    <Content Include="scss\mixins\_transition.scss" />
-    <Content Include="scss\mixins\_visibility.scss" />
-    <Content Include="scss\style.scss" />
-    <Content Include="scss\utilities\_align.scss" />
-    <Content Include="scss\utilities\_background.scss" />
-    <Content Include="scss\utilities\_borders.scss" />
-    <Content Include="scss\utilities\_clearfix.scss" />
-    <Content Include="scss\utilities\_display.scss" />
-    <Content Include="scss\utilities\_embed.scss" />
-    <Content Include="scss\utilities\_flex.scss" />
-    <Content Include="scss\utilities\_float.scss" />
-    <Content Include="scss\utilities\_position.scss" />
-    <Content Include="scss\utilities\_screenreaders.scss" />
-    <Content Include="scss\utilities\_sizing.scss" />
-    <Content Include="scss\utilities\_spacing.scss" />
-    <Content Include="scss\utilities\_text.scss" />
-    <Content Include="scss\utilities\_visibility.scss" />
-    <Content Include="scss\_alert.scss" />
-    <Content Include="scss\_badge.scss" />
-    <Content Include="scss\_breadcrumb.scss" />
-    <Content Include="scss\_button-group.scss" />
-    <Content Include="scss\_buttons.scss" />
-    <Content Include="scss\_card.scss" />
-    <Content Include="scss\_carousel.scss" />
-    <Content Include="scss\_close.scss" />
-    <Content Include="scss\_code.scss" />
-    <Content Include="scss\_custom-forms.scss" />
-    <Content Include="scss\_custom.scss" />
-    <Content Include="scss\_dropdown.scss" />
-    <Content Include="scss\_forms.scss" />
-    <Content Include="scss\_functions.scss" />
-    <Content Include="scss\_grid.scss" />
-    <Content Include="scss\_images.scss" />
-    <Content Include="scss\_input-group.scss" />
-    <Content Include="scss\_jumbotron.scss" />
-    <Content Include="scss\_list-group.scss" />
-    <Content Include="scss\_media.scss" />
-    <Content Include="scss\_mixins.scss" />
-    <Content Include="scss\_modal.scss" />
-    <Content Include="scss\_nav.scss" />
-    <Content Include="scss\_navbar.scss" />
-    <Content Include="scss\_pagination.scss" />
-    <Content Include="scss\_popover.scss" />
-    <Content Include="scss\_print.scss" />
-    <Content Include="scss\_progress.scss" />
-    <Content Include="scss\_reboot.scss" />
-    <Content Include="scss\_root.scss" />
-    <Content Include="scss\_tables.scss" />
-    <Content Include="scss\_tooltip.scss" />
-    <Content Include="scss\_transitions.scss" />
-    <Content Include="scss\_type.scss" />
-    <Content Include="scss\_utilities.scss" />
-    <Content Include="scss\_variables.scss" />
+    <Content Include="Views\Disease\AddMedicine.cshtml" />
+    <Content Include="Views\Disease\AddSymptom.cshtml" />
+    <Content Include="Views\Disease\AddTreatment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
