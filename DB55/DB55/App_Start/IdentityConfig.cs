@@ -11,6 +11,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using DB55.Models;
+using System.Net.Mail;
+using System.Net.Mime;
+using System.Configuration;
 
 namespace DB55
 {
@@ -21,6 +24,7 @@ namespace DB55
             // Plug in your email service here to send an email.
             return Task.FromResult(0);
         }
+        
     }
 
     public class SmsService : IIdentityMessageService

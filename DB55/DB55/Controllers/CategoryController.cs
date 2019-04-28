@@ -77,6 +77,10 @@ namespace DB55.Controllers
 
                 List<Category> cat_list = db.Categories.ToList();
 
+                List<PredictedTreatment> Pre_trt = db.PredictedTreatments.ToList();
+
+                List<Medicine> Med_trt = db.Medicines.ToList();
+
                 List<Reason> reas_list = db.Reasons.ToList();
 
                 foreach (SymptomsModel s in list)
@@ -130,6 +134,28 @@ namespace DB55.Controllers
                                 if (f.DoctorId == d.DoctorId && f.DiseaseId == s.DiseaseId)
                                 {
                                     obj.ReasonName = f.Name;
+                                }
+                                else
+                                {
+
+                                }
+                            }
+
+                            foreach (PredictedTreatment f in Pre_trt)
+                            {
+                                if (f.DiseaseId == s.DiseaseId)
+                                {
+                                    foreach (Medicine m in Med_trt)
+                                    {
+                                        if (f.MedicineId == m.Id)
+                                        {
+                                            obj.MedicineName = m.Name;
+                                        }
+                                        else
+                                        {
+
+                                        }
+                                    }
                                 }
                                 else
                                 {
